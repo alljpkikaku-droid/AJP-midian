@@ -437,7 +437,6 @@ document.querySelectorAll('.miniTrack').forEach(track => {
   track.querySelectorAll('img').forEach(img => {
     img.style.cursor = 'pointer';
     img.addEventListener('click', () => openModal(img.src));
-  });
 });
 </script>
 <!-- </body>の直上（</body>の直前）に追加 -->
@@ -491,7 +490,6 @@ function closeModal(ev){
     document.getElementById('imageModal').classList.remove('show');
   }
 }
-
 /* 矢印ボタンクリックでも閉じないようにする（イベント伝播止め） */
 document.querySelectorAll('.arrow').forEach(btn => {
   btn.addEventListener('click', e => e.stopPropagation());
@@ -500,6 +498,7 @@ document.querySelectorAll('.arrow').forEach(btn => {
 </body>
 
 </html>
+
 
 
 
