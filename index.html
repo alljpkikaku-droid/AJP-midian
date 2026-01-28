@@ -2,8 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-  <title>MIDIAN新型<br>ペルチェ冷却服｜酷暑を-25℃へ</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MIDIAN新型ペルチェ冷却服｜酷暑を-25℃へ</title>
   <meta name="description" content="新登場、業界初32Vペルチェ冷却服。38℃現場でも1秒で-25℃体感。送風＋冷却のWモードで頭まで涼しい。現場作業・イベント・レジャーにも最適。">
   <meta name="keywords" content="冷却服,ペルチェ,猛暑対策,現場作業,2025,32V,熱中症対策,空調服">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -226,6 +225,15 @@
       padding:8px 20px;
       border-radius:20px;
       z-index:10002;
+      }
+    .seo-hidden {
+     position: absolute;
+     left: -9999px;
+     top: auto;
+     width: 1px;
+     height: 1px;
+     overflow: hidden;
+     white-space: nowrap;
     }
   </style>
 </head>
@@ -254,7 +262,7 @@
     <img src="assets/07.jpg" alt=""><img src="assets/10-1.jpg" alt=""><img src="assets/09.jpg" alt="">
     <img src="assets/10.jpg" alt="">
   </div>
-</div
+</div>
 <!-- 中央配置の補足文 -->
 <p style="text-align:center;margin:0.2rem 0 .01rem;font-size:0.9rem;color:#555;">写真をクリックして詳細確認できます。ESCキーで閉じる</p>
 <section>
@@ -264,7 +272,7 @@
     <div class="card">
       <img src="assets/01 (2).jpg" alt="" onclick="openModal(this.src)">
       <div>
-        <h3>新登場</h3>
+        <h3>新登場ペルチェ冷却服</h3>
         <p>大面積ペルチェ冷却プレートが1秒で冷感を伝え、38℃の炎天下でも局所温度を約-25℃下げる圧倒的冷却力。</p>
       </div>
     </div>
@@ -420,14 +428,6 @@ S～5Lまで幅広いサイズ展開で、
   <button class="arrow left" onclick="changeImage(-1)">‹</button>
   <button class="arrow right" onclick="changeImage(1)">›</button>
 </div>
-<script>
-/* --- 原寸モーダル（共通） --- */
-function openModal(src){
-  const modal = document.getElementById('imageModal');
-  const modalImg = document.getElementById('modalImg');
-  modalImg.src = src;
-  modal.classList.add('show');
-}
 /* --- ミニループ自動設定 --- */
 document.querySelectorAll('.miniTrack').forEach(track => {
   const set = track.dataset.set || 3;      // 枚数
@@ -500,6 +500,7 @@ document.querySelectorAll('.arrow').forEach(btn => {
 </body>
 
 </html>
+
 
 
 
