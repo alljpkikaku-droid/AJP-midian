@@ -428,16 +428,20 @@ S～5Lまで幅広いサイズ展開で、
   <button class="arrow left" onclick="changeImage(-1)">‹</button>
   <button class="arrow right" onclick="changeImage(1)">›</button>
 </div>
+
+<script>
 /* --- ミニループ自動設定 --- */
 document.querySelectorAll('.miniTrack').forEach(track => {
-  const set = track.dataset.set || 3;      // 枚数
-  const speed = set * 3.3;                 // 速度計算
+  const set = track.dataset.set || 3;
+  const speed = set * 3.3;
   track.style.animation = `slideLoop ${speed}s linear infinite`;
   /* クリックで原寸 */
   track.querySelectorAll('img').forEach(img => {
     img.style.cursor = 'pointer';
     img.addEventListener('click', () => openModal(img.src));
+  });
 });
+</script>
 </script>
 <!-- </body>の直上（</body>の直前）に追加 -->
 <script>
@@ -498,6 +502,7 @@ document.querySelectorAll('.arrow').forEach(btn => {
 </body>
 
 </html>
+
 
 
 
